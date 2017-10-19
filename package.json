@@ -1,6 +1,6 @@
 {
   "name": "apex-ts-starter-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Starter project for an Apex project using Typescript",
   "main": "./build/app.js",
   "scripts": {

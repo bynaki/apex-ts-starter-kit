@@ -1,8 +1,0 @@
-{
-  "name": "apex-typescript",
-  "description": "Apex using typesript",
-  "memory": 128,
-  "timeout": 5,
-  "role": "arn:aws:iam::596135062235:role/apex-typescript_lambda_function",
-  "environment": {}
-}
