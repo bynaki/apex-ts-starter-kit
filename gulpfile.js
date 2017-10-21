@@ -95,7 +95,12 @@ function compileTypescript(tsProject, src, dest) {
  */
 const tsProject = ts.createProject('tsconfig.json')
 gulp.task('scripts', () => {
-  return compileTypescript(tsProject, getSrc('**/**.ts'), getDest())
+  return compileTypescript(tsProject
+    , [
+        getSrc('**/**.ts'),
+        '!src/**/node_modules/**/**.ts'
+      ]
+    , getDest())
     .pipe(gulp.dest(getDest()))
 })
 
